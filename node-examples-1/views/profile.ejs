@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NodeJS Website</title>
+  <style>
+   body {
+    background: skyblue;
+    font-family: verdana;
+    color: #fff;
+    padding: 30px;
+   }
+
+   h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+   }
+
+   p {
+    font-size: 16px;
+    text-align: center;
+   }
+  </style>
+</head>
+<body>
+  <% include partials/nav.ejs %> 
+  <h1>Добро пожаловать в профиль <%= person %></h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam asperiores, laudantium tempora ex eligendi mollitia. Quas esse saepe, quod hic doloremque in, quasi vero non sint autem cum quam ab!</p>
+</body>
+</html>

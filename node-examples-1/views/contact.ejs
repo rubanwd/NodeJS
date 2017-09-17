@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NodeJS Website</title>
+  <style>
+   body {
+    background: skyblue;
+    font-family: verdana;
+    color: #fff;
+    padding: 30px;
+   }
+
+   h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+   }
+
+   p {
+    font-size: 16px;
+    text-align: center;
+   }
+  </style>
+</head>
+<body>
+  <% include partials/nav.ejs %> 
+  <h1>CONTACT</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nam aut, doloremque labore animi voluptate. Rerum eius eligendi tenetur, vitae voluptatibus sapiente quas dolores repellat optio omnis, deserunt nulla illo.</p>
+
+  <form action="/contact" method="post" id="contact-form">
+    <label for="who">С кем вы хотите связаться?</label>
+    <input type="text" name="who" value="<%= qs.person %>">
+    <label for="department">Какой отдел?</label>
+    <input type="text" name="department" value="<%= qs.dept %>">
+    <label for="email">Ваш Email</label>
+    <input type="email" name="email">
+    <input type="submit" value="Отправить">
+  </form>
+</body>
+</html>
